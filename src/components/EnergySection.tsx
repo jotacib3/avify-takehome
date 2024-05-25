@@ -12,7 +12,7 @@ const EnergySection: React.FC = () => {
     return (
         <>
             <h1>UK Energy Mix</h1>
-            {isLoading ? <>Loading...</> : <EnergyDisplay data={data!}/>}
+            {isLoading ? <>Loading...</> : <EnergyDisplay data={data}/>}
         </>
     );
 };

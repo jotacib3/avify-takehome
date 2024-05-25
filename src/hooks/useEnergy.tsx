@@ -6,7 +6,7 @@ import { IEnergy } from "../types/IEnergy";
  * It uses the useQuery hook from react-query for data fetching.
  */
 const useEnergy = () => {
-    return useQuery<IEnergy[], Error>('energy', async () => {
+    return useQuery<IEnergy, Error>('generation', async () => {
         const response = await fetch('https://api.carbonintensity.org.uk/generation');
         const data = await response.json();
         return data.data;
