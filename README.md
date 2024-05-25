@@ -75,3 +75,33 @@ An existing website that shows this data is here: https://gridwatch.co.uk/
    -  Link to the repository of the project.
    -  Any additional information you want to share with us.
 -  Github link to the project is required with the response email.
+
+## Notes
+
+### Generales
+En el projecto me centré inicialmente funcionalidad ya que dar un estilo agradable me parecía
+lo más fácil de hacer, por lo que luego que el projecto era totalmente funcional me dediqué a
+agregar los test en react usando testing-library y jest. Luego de los problemas que comento en eso me dediqué a darle un
+la sesion de test me dediqué a darle un estilo agradable al projecto utilizando la biblioteca recharts para mostrar los datos de forma
+visualmente agradable. Sin embargo, no me dará tiempo por lo que no lo agregaré al zip ni subiré
+al repo.
+
+El código está debidamente comentado, usé conventional commit para dejar commit claros y
+entendibles.
+
+### Tests
+- Para los test quise usar msw ya que me parece una excelente herramienta moderna
+para realizar test de integración, pero no pude hacerlo funcionar correctamente, por lo que
+decidí hacer los test de integración mockeando la respuesta de la api con jest. En el ultimo
+projecto que trabajé con jest era la versión anterior de msw, aunque le dediqué como 4h no pude
+terminar de resolver los problemas que me daba msw con la configuración actual del proyecto.
+
+- Los test se pueden correr de forma apropiada con el comando ```npm run test```
+
+### Deploy
+- Para el deploy del projecto usé vercel, pero no pude hacer que funcionara correctamente,
+de igual forma les envío el link del deploy. Agregue un comando build para crear el compilado
+ya casi al final del tiempo, por lo que no pude probarlo correctamente. Generalmente estaba
+usando Nextjs para mis proyectos y no tuve problemas con el deploy en vercel.
+
+- Link del deploy sin que terminara de funcionar: https://avify-takehome-amber.vercel.app/
